@@ -6,18 +6,21 @@
 //
 
 import SwiftUI
+import NavigationStack
 
 struct ContentView: View {    
     @EnvironmentObject var router: Router
     
     var body: some View {
         TabView(selection: $router.tabSelection) {
-            DashboardScreen()
-                .tabItem {
-                    Image(systemName: "gift")
-                    Text("Dashboard")
-                }
-                .tag(0)
+            NavigationStackView {
+                DashboardScreen()
+            }
+            .tabItem {
+                Image(systemName: "gift")
+                Text("Dashboard")
+            }
+            .tag(0)
             FoodListScreen()
                 .tabItem {
                     Image(systemName: "leaf")
@@ -30,6 +33,12 @@ struct ContentView: View {
                     Image(systemName: "star")
                 }
                 .tag(2)
+            NewsScreen()
+                .tabItem {
+                    Text("News")
+                    Image(systemName: "cloud")
+                }
+                .tag(3)
         }
 
     }

@@ -3,11 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0516EA269EE09E00938BDF /* NewsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0516E9269EE09E00938BDF /* NewsScreen.swift */; };
+		CE05170F269EE48D00938BDF /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = CE05170E269EE48D00938BDF /* Networking */; };
+		CE051713269EE94C00938BDF /* AnyCodable in Frameworks */ = {isa = PBXBuildFile; productRef = CE051712269EE94C00938BDF /* AnyCodable */; };
+		CE05171A269F03D900938BDF /* AnyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE051717269F03D900938BDF /* AnyTransition.swift */; };
+		CE05171B269F03D900938BDF /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE051718269F03D900938BDF /* Collection.swift */; };
+		CE05171C269F03D900938BDF /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE051719269F03D900938BDF /* Optional.swift */; };
+		CE05171F269F041300938BDF /* NewsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05171E269F041300938BDF /* NewsExtensions.swift */; };
+		CE051722269F043600938BDF /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE051721269F043600938BDF /* NewsViewModel.swift */; };
+		CE051725269F047C00938BDF /* NewsCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE051724269F047C00938BDF /* NewsCity.swift */; };
 		CE063D742688C0B60011EFA5 /* SuiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE063D732688C0B60011EFA5 /* SuiView.swift */; };
+		CE540EE026A46CB50025D87D /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = CE540EDF26A46CB50025D87D /* NavigationStack */; };
+		CE540EE426A46EBA0025D87D /* UserScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE540EE326A46EBA0025D87D /* UserScreen.swift */; };
+		CE540EEC26A470930025D87D /* UsersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE540EEB26A470930025D87D /* UsersScreen.swift */; };
+		CE540EEF26A47AC50025D87D /* PhonesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE540EEE26A47AC50025D87D /* PhonesScreen.swift */; };
 		CED16B48268095F2003182F7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED16B47268095F2003182F7 /* Router.swift */; };
 		CED16B4B2680C2E5003182F7 /* PolicyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED16B4A2680C2E5003182F7 /* PolicyScreen.swift */; };
 		CED16B4F2680C4FC003182F7 /* ModalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED16B4E2680C4FC003182F7 /* ModalScreen.swift */; };
@@ -23,7 +36,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE0516E9269EE09E00938BDF /* NewsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsScreen.swift; sourceTree = "<group>"; };
+		CE0516ED269EE39000938BDF /* Networking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Networking; sourceTree = "<group>"; };
+		CE051717269F03D900938BDF /* AnyTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyTransition.swift; sourceTree = "<group>"; };
+		CE051718269F03D900938BDF /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		CE051719269F03D900938BDF /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		CE05171E269F041300938BDF /* NewsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsExtensions.swift; sourceTree = "<group>"; };
+		CE051721269F043600938BDF /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		CE051724269F047C00938BDF /* NewsCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCity.swift; sourceTree = "<group>"; };
 		CE063D732688C0B60011EFA5 /* SuiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuiView.swift; sourceTree = "<group>"; };
+		CE540EE326A46EBA0025D87D /* UserScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScreen.swift; sourceTree = "<group>"; };
+		CE540EEB26A470930025D87D /* UsersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersScreen.swift; sourceTree = "<group>"; };
+		CE540EEE26A47AC50025D87D /* PhonesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonesScreen.swift; sourceTree = "<group>"; };
 		CED16B47268095F2003182F7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		CED16B4A2680C2E5003182F7 /* PolicyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyScreen.swift; sourceTree = "<group>"; };
 		CED16B4E2680C4FC003182F7 /* ModalScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalScreen.swift; sourceTree = "<group>"; };
@@ -45,12 +69,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE051713269EE94C00938BDF /* AnyCodable in Frameworks */,
+				CE540EE026A46CB50025D87D /* NavigationStack in Frameworks */,
+				CE05170F269EE48D00938BDF /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE0516E8269EE06D00938BDF /* News */ = {
+			isa = PBXGroup;
+			children = (
+				CE0516E9269EE09E00938BDF /* NewsScreen.swift */,
+				CE05171E269F041300938BDF /* NewsExtensions.swift */,
+				CE051721269F043600938BDF /* NewsViewModel.swift */,
+				CE051724269F047C00938BDF /* NewsCity.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		CE0516EF269EE44300938BDF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CE0516ED269EE39000938BDF /* Networking */,
+			);
+			path = Modules;
+			sourceTree = SOURCE_ROOT;
+		};
+		CE05170D269EE48D00938BDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE051716269F037A00938BDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE051717269F03D900938BDF /* AnyTransition.swift */,
+				CE051718269F03D900938BDF /* Collection.swift */,
+				CE051719269F03D900938BDF /* Optional.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CE063D702688BE4E0011EFA5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +130,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		CE540EE226A46E770025D87D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				CE540EE326A46EBA0025D87D /* UserScreen.swift */,
+				CE540EEB26A470930025D87D /* UsersScreen.swift */,
+				CE540EEE26A47AC50025D87D /* PhonesScreen.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		CED16B4D2680C4E4003182F7 /* FoodList */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +154,7 @@
 			children = (
 				FA9D093D267A6CDD00BB8A4B /* AppSUI */,
 				FA9D093C267A6CDD00BB8A4B /* Products */,
+				CE05170D269EE48D00938BDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +169,10 @@
 		FA9D093D267A6CDD00BB8A4B /* AppSUI */ = {
 			isa = PBXGroup;
 			children = (
+				CE540EE226A46E770025D87D /* Dashboard */,
+				CE051716269F037A00938BDF /* Extensions */,
+				CE0516EF269EE44300938BDF /* Modules */,
+				CE0516E8269EE06D00938BDF /* News */,
 				CE063D722688C0980011EFA5 /* Views */,
 				CE063D702688BE4E0011EFA5 /* Services */,
 				CED16B4D2680C4E4003182F7 /* FoodList */,
@@ -152,6 +230,11 @@
 			dependencies = (
 			);
 			name = AppSUI;
+			packageProductDependencies = (
+				CE05170E269EE48D00938BDF /* Networking */,
+				CE051712269EE94C00938BDF /* AnyCodable */,
+				CE540EDF26A46CB50025D87D /* NavigationStack */,
+			);
 			productName = AppSUI;
 			productReference = FA9D093B267A6CDD00BB8A4B /* AppSUI.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +262,10 @@
 				Base,
 			);
 			mainGroup = FA9D0932267A6CDD00BB8A4B;
+			packageReferences = (
+				CE051711269EE94C00938BDF /* XCRemoteSwiftPackageReference "AnyCodable" */,
+				CE540EDE26A46CB50025D87D /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */,
+			);
 			productRefGroup = FA9D093C267A6CDD00BB8A4B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -206,13 +293,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED16B48268095F2003182F7 /* Router.swift in Sources */,
+				CE540EEF26A47AC50025D87D /* PhonesScreen.swift in Sources */,
 				CED16B4F2680C4FC003182F7 /* ModalScreen.swift in Sources */,
 				FA9D0956267A72ED00BB8A4B /* LazyView.swift in Sources */,
 				FA9D0953267A729500BB8A4B /* LicensesScreen.swift in Sources */,
 				FA9D0941267A6CDD00BB8A4B /* ContentView.swift in Sources */,
+				CE051725269F047C00938BDF /* NewsCity.swift in Sources */,
+				CE05171B269F03D900938BDF /* Collection.swift in Sources */,
+				CE05171A269F03D900938BDF /* AnyTransition.swift in Sources */,
 				FA9D093F267A6CDD00BB8A4B /* AppSUIApp.swift in Sources */,
 				FA9D094E267A6D8000BB8A4B /* DashboardScreen.swift in Sources */,
+				CE540EEC26A470930025D87D /* UsersScreen.swift in Sources */,
+				CE051722269F043600938BDF /* NewsViewModel.swift in Sources */,
 				CE063D742688C0B60011EFA5 /* SuiView.swift in Sources */,
+				CE0516EA269EE09E00938BDF /* NewsScreen.swift in Sources */,
+				CE05171C269F03D900938BDF /* Optional.swift in Sources */,
+				CE05171F269F041300938BDF /* NewsExtensions.swift in Sources */,
+				CE540EE426A46EBA0025D87D /* UserScreen.swift in Sources */,
 				CED16B4B2680C2E5003182F7 /* PolicyScreen.swift in Sources */,
 				FA9D0950267A707B00BB8A4B /* AboutScreen.swift in Sources */,
 				FA9D0958267A78B000BB8A4B /* FoodListScreen.swift in Sources */,
@@ -353,7 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = exey.AppSUI;
+				PRODUCT_BUNDLE_IDENTIFIER = vitalya.AppSUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -375,7 +472,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = exey.AppSUI;
+				PRODUCT_BUNDLE_IDENTIFIER = vitalya.AppSUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -404,6 +501,42 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE051711269EE94C00938BDF /* XCRemoteSwiftPackageReference "AnyCodable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flight-School/AnyCodable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.1;
+			};
+		};
+		CE540EDE26A46CB50025D87D /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/matteopuc/swiftui-navigation-stack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE05170E269EE48D00938BDF /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		CE051712269EE94C00938BDF /* AnyCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE051711269EE94C00938BDF /* XCRemoteSwiftPackageReference "AnyCodable" */;
+			productName = AnyCodable;
+		};
+		CE540EDF26A46CB50025D87D /* NavigationStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE540EDE26A46CB50025D87D /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */;
+			productName = NavigationStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA9D0933267A6CDD00BB8A4B /* Project object */;
 }

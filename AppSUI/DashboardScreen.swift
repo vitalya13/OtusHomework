@@ -6,30 +6,22 @@
 //
 
 import SwiftUI
+import NavigationStack
 
 struct DashboardScreen: View {
     @EnvironmentObject var router: Router
-        
+    @EnvironmentObject private var navigationStack: NavigationStack
+            
     var body: some View {
         NavigationView {
             VStack {
-                Text("Welcome! I am dashboard")
+                Text("Custom navigation stack")
                 Divider()
-                Button {
-                    self.router.tabSelection = 1
-                } label: {
-                    Text("Go to FoodList")
-                }
-                Divider()
-                Button {
-                    self.router.showFoodListLicenses()
-                } label: {
-                    Text("Go to FoodList Licenses")
-                }                
-                Divider()
-                SuiView(text: "Hello suiView UIViewRepresentable")
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 100)
-                Spacer()
+                Button(action: {
+                    self.navigationStack.push(UsersScreen())
+                }, label: {
+                    Text("Go to users")
+                })
             }
             .navigationTitle("Dashboard")
         }
@@ -39,5 +31,15 @@ struct DashboardScreen: View {
 struct DashboardScreen_Previews: PreviewProvider {
     static var previews: some View {
         DashboardScreen()
+    }
+}
+
+extension  DashboardScreen {
+    enum ViewDestinations {
+        case noDestination
+        case users
+        case user
+        case phones
+        case phone
     }
 }

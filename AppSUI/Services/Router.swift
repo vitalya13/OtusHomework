@@ -13,6 +13,7 @@ import NavigationStack
 final class Router: ObservableObject {
     @Published var tabSelection: Int = 0
     @Published var foodListSelection: Int?
+    @Published var dashboardNavigationStack: NavigationStack = .init()
             
     func showFoodListLicenses() {
         self.tabSelection = 1

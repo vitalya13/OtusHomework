@@ -13,9 +13,9 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $router.tabSelection) {
-            NavigationStackView {
+            NavigationStackView(navigationStack: self.router.dashboardNavigationStack) {
                 DashboardScreen()
-            }
+            }            
             .tabItem {
                 Image(systemName: "gift")
                 Text("Dashboard")

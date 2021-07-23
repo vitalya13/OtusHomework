@@ -9,16 +9,15 @@ import SwiftUI
 import NavigationStack
 
 struct DashboardScreen: View {
-    @EnvironmentObject var router: Router
-    @EnvironmentObject private var navigationStack: NavigationStack
-            
+    @EnvironmentObject var router: Router    
+                
     var body: some View {
         NavigationView {
             VStack {
                 Text("Custom navigation stack")
                 Divider()
                 Button(action: {
-                    self.navigationStack.push(UsersScreen())
+                    self.router.dashboardNavigationStack.push(UsersScreen())
                 }, label: {
                     Text("Go to users")
                 })

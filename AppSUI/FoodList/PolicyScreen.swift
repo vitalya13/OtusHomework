@@ -6,20 +6,32 @@
 //
 
 import SwiftUI
+import AppCore
 
 struct PolicyScreen: View {
-    @EnvironmentObject var router: Router
+    @ObservedObject var viewModel = ViewModel()
     
     var body: some View {
         VStack {
             Text("Welcome! I am Policy")
             Button {
-                router.tabSelection = 0
+                self.viewModel.goToDashboard()
             } label: {
                 Text("Go to Dashboard")
             }
         }
         .navigationTitle("Policy")
+    }
+}
+
+extension PolicyScreen {
+    class ViewModel: ObservableObject {
+        @AppCoreInjector var router: AppCore.RouterService?
+        
+        func goToDashboard() {
+            guard let router = router else { return }
+            router.tabSelection = 0
+        }
     }
 }
 

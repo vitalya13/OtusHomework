@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CE0516EA269EE09E00938BDF /* NewsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0516E9269EE09E00938BDF /* NewsScreen.swift */; };
-		CE05170F269EE48D00938BDF /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = CE05170E269EE48D00938BDF /* Networking */; };
-		CE051713269EE94C00938BDF /* AnyCodable in Frameworks */ = {isa = PBXBuildFile; productRef = CE051712269EE94C00938BDF /* AnyCodable */; };
 		CE05171A269F03D900938BDF /* AnyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE051717269F03D900938BDF /* AnyTransition.swift */; };
 		CE05171B269F03D900938BDF /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE051718269F03D900938BDF /* Collection.swift */; };
 		CE05171C269F03D900938BDF /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE051719269F03D900938BDF /* Optional.swift */; };
@@ -17,11 +15,13 @@
 		CE051722269F043600938BDF /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE051721269F043600938BDF /* NewsViewModel.swift */; };
 		CE051725269F047C00938BDF /* NewsCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE051724269F047C00938BDF /* NewsCity.swift */; };
 		CE063D742688C0B60011EFA5 /* SuiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE063D732688C0B60011EFA5 /* SuiView.swift */; };
-		CE540EE026A46CB50025D87D /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = CE540EDF26A46CB50025D87D /* NavigationStack */; };
 		CE540EE426A46EBA0025D87D /* UserScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE540EE326A46EBA0025D87D /* UserScreen.swift */; };
 		CE540EEC26A470930025D87D /* UsersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE540EEB26A470930025D87D /* UsersScreen.swift */; };
 		CE540EEF26A47AC50025D87D /* PhonesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE540EEE26A47AC50025D87D /* PhonesScreen.swift */; };
-		CED16B48268095F2003182F7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED16B47268095F2003182F7 /* Router.swift */; };
+		CE94DCD126AAF06900C59AAA /* AnyCodable in Frameworks */ = {isa = PBXBuildFile; productRef = CE94DCD026AAF06900C59AAA /* AnyCodable */; };
+		CE94DCD326AAF07100C59AAA /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = CE94DCD226AAF07100C59AAA /* Networking */; };
+		CE94DCD526AAF07500C59AAA /* AppCore in Frameworks */ = {isa = PBXBuildFile; productRef = CE94DCD426AAF07500C59AAA /* AppCore */; };
+		CEB4B24726AAF22300E8F600 /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = CEB4B24626AAF22300E8F600 /* NavigationStack */; };
 		CED16B4B2680C2E5003182F7 /* PolicyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED16B4A2680C2E5003182F7 /* PolicyScreen.swift */; };
 		CED16B4F2680C4FC003182F7 /* ModalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED16B4E2680C4FC003182F7 /* ModalScreen.swift */; };
 		FA9D093F267A6CDD00BB8A4B /* AppSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D093E267A6CDD00BB8A4B /* AppSUIApp.swift */; };
@@ -45,10 +45,10 @@
 		CE051721269F043600938BDF /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		CE051724269F047C00938BDF /* NewsCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCity.swift; sourceTree = "<group>"; };
 		CE063D732688C0B60011EFA5 /* SuiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuiView.swift; sourceTree = "<group>"; };
+		CE53724B26AAE232009F4F8E /* AppCore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppCore; sourceTree = "<group>"; };
 		CE540EE326A46EBA0025D87D /* UserScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScreen.swift; sourceTree = "<group>"; };
 		CE540EEB26A470930025D87D /* UsersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersScreen.swift; sourceTree = "<group>"; };
 		CE540EEE26A47AC50025D87D /* PhonesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonesScreen.swift; sourceTree = "<group>"; };
-		CED16B47268095F2003182F7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		CED16B4A2680C2E5003182F7 /* PolicyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyScreen.swift; sourceTree = "<group>"; };
 		CED16B4E2680C4FC003182F7 /* ModalScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalScreen.swift; sourceTree = "<group>"; };
 		FA9D093B267A6CDD00BB8A4B /* AppSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,9 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE051713269EE94C00938BDF /* AnyCodable in Frameworks */,
-				CE540EE026A46CB50025D87D /* NavigationStack in Frameworks */,
-				CE05170F269EE48D00938BDF /* Networking in Frameworks */,
+				CE94DCD326AAF07100C59AAA /* Networking in Frameworks */,
+				CEB4B24726AAF22300E8F600 /* NavigationStack in Frameworks */,
+				CE94DCD526AAF07500C59AAA /* AppCore in Frameworks */,
+				CE94DCD126AAF06900C59AAA /* AnyCodable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +93,7 @@
 		CE0516EF269EE44300938BDF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CE53724B26AAE232009F4F8E /* AppCore */,
 				CE0516ED269EE39000938BDF /* Networking */,
 			);
 			path = Modules;
@@ -112,14 +114,6 @@
 				CE051719269F03D900938BDF /* Optional.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		CE063D702688BE4E0011EFA5 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				CED16B47268095F2003182F7 /* Router.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		CE063D722688C0980011EFA5 /* Views */ = {
@@ -174,7 +168,6 @@
 				CE0516EF269EE44300938BDF /* Modules */,
 				CE0516E8269EE06D00938BDF /* News */,
 				CE063D722688C0980011EFA5 /* Views */,
-				CE063D702688BE4E0011EFA5 /* Services */,
 				CED16B4D2680C4E4003182F7 /* FoodList */,
 				FA9D0954267A72D900BB8A4B /* Modifiers */,
 				FA9D0951267A728600BB8A4B /* About */,
@@ -231,9 +224,10 @@
 			);
 			name = AppSUI;
 			packageProductDependencies = (
-				CE05170E269EE48D00938BDF /* Networking */,
-				CE051712269EE94C00938BDF /* AnyCodable */,
-				CE540EDF26A46CB50025D87D /* NavigationStack */,
+				CE94DCD026AAF06900C59AAA /* AnyCodable */,
+				CE94DCD226AAF07100C59AAA /* Networking */,
+				CE94DCD426AAF07500C59AAA /* AppCore */,
+				CEB4B24626AAF22300E8F600 /* NavigationStack */,
 			);
 			productName = AppSUI;
 			productReference = FA9D093B267A6CDD00BB8A4B /* AppSUI.app */;
@@ -263,8 +257,8 @@
 			);
 			mainGroup = FA9D0932267A6CDD00BB8A4B;
 			packageReferences = (
-				CE051711269EE94C00938BDF /* XCRemoteSwiftPackageReference "AnyCodable" */,
-				CE540EDE26A46CB50025D87D /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */,
+				CE53725826AAEF58009F4F8E /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */,
+				CE53725C26AAEF70009F4F8E /* XCRemoteSwiftPackageReference "AnyCodable" */,
 			);
 			productRefGroup = FA9D093C267A6CDD00BB8A4B /* Products */;
 			projectDirPath = "";
@@ -292,7 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED16B48268095F2003182F7 /* Router.swift in Sources */,
 				CE540EEF26A47AC50025D87D /* PhonesScreen.swift in Sources */,
 				CED16B4F2680C4FC003182F7 /* ModalScreen.swift in Sources */,
 				FA9D0956267A72ED00BB8A4B /* LazyView.swift in Sources */,
@@ -442,7 +435,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AppSUI/Preview Content\"";
-				DEVELOPMENT_TEAM = J4GES9GRUE;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AppSUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -464,7 +457,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AppSUI/Preview Content\"";
-				DEVELOPMENT_TEAM = J4GES9GRUE;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AppSUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -503,15 +496,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CE051711269EE94C00938BDF /* XCRemoteSwiftPackageReference "AnyCodable" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Flight-School/AnyCodable";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.6.1;
-			};
-		};
-		CE540EDE26A46CB50025D87D /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */ = {
+		CE53725826AAEF58009F4F8E /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/matteopuc/swiftui-navigation-stack.git";
 			requirement = {
@@ -519,21 +504,33 @@
 				minimumVersion = 1.0.3;
 			};
 		};
+		CE53725C26AAEF70009F4F8E /* XCRemoteSwiftPackageReference "AnyCodable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flight-School/AnyCodable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CE05170E269EE48D00938BDF /* Networking */ = {
+		CE94DCD026AAF06900C59AAA /* AnyCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE53725C26AAEF70009F4F8E /* XCRemoteSwiftPackageReference "AnyCodable" */;
+			productName = AnyCodable;
+		};
+		CE94DCD226AAF07100C59AAA /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Networking;
 		};
-		CE051712269EE94C00938BDF /* AnyCodable */ = {
+		CE94DCD426AAF07500C59AAA /* AppCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE051711269EE94C00938BDF /* XCRemoteSwiftPackageReference "AnyCodable" */;
-			productName = AnyCodable;
+			productName = AppCore;
 		};
-		CE540EDF26A46CB50025D87D /* NavigationStack */ = {
+		CEB4B24626AAF22300E8F600 /* NavigationStack */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE540EDE26A46CB50025D87D /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */;
+			package = CE53725826AAEF58009F4F8E /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */;
 			productName = NavigationStack;
 		};
 /* End XCSwiftPackageProductDependency section */

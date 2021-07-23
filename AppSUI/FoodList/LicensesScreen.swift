@@ -6,22 +6,33 @@
 //
 
 import SwiftUI
+import AppCore
 
-struct LicensesScreen: View {    
-    @EnvironmentObject var router: Router
+struct LicensesScreen: View {
+    @ObservedObject var viewModel = ViewModel()
     
     var body: some View {
         VStack {
             Text("Welcome! I am Licenses")
             Button {
-                router.tabSelection = 0
+                self.viewModel.goToDashboard()
             } label: {
                 Text("Go to Dashboard")
             }
         }
         .navigationTitle("Licenses")
     }
-    
+}
+
+extension LicensesScreen {
+    class ViewModel: ObservableObject {
+        @AppCoreInjector var router: AppCore.RouterService?
+        
+        func goToDashboard() {
+            guard let router = router else { return }
+            router.tabSelection = 0
+        }
+    }
 }
 
 struct LicensesScreen_Previews: PreviewProvider {

@@ -6,21 +6,39 @@
 //
 
 import SwiftUI
+import AppCore
 
 struct FoodListScreen: View {
-    @EnvironmentObject var router: Router
+    @ObservedObject var viewModel = ViewModel()
             
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: LazyView(LicensesScreen()), tag: 0, selection: $router.foodListSelection) {
+                NavigationLink(destination: LazyView(LicensesScreen())) {
                     Text("Licenses")
                 }
-                NavigationLink(destination: LazyView(PolicyScreen()), tag: 1, selection: $router.foodListSelection) {
+                NavigationLink(destination: LazyView(PolicyScreen())) {
                     Text("Policy")
                 }                
             }
             .navigationTitle("FoodList")
+        }
+    }
+}
+
+extension FoodListScreen {
+    class ViewModel: ObservableObject {
+        @AppCoreInjector var router: AppCore.RouterService?
+        
+        var foodListSelection: Binding<Int?> {
+            Binding(
+                get: {
+                    self.router?.foodListSelection
+                },
+                set: {
+                    self.router?.foodListSelection = $0                 
+                }
+            )
         }
     }
 }

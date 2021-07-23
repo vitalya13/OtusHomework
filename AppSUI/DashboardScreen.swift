@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
-import NavigationStack
+import AppCore
 
 struct DashboardScreen: View {
-    @EnvironmentObject var router: Router    
+    @ObservedObject var viewModel = ViewModel()
                 
     var body: some View {
         NavigationView {
@@ -17,12 +17,22 @@ struct DashboardScreen: View {
                 Text("Custom navigation stack")
                 Divider()
                 Button(action: {
-                    self.router.dashboardNavigationStack.push(UsersScreen())
+                    self.viewModel.goToUsers()
                 }, label: {
                     Text("Go to users")
                 })
             }
             .navigationTitle("Dashboard")
+        }
+    }
+}
+
+extension  DashboardScreen {
+    class ViewModel: ObservableObject {
+        @AppCoreInjector var router: AppCore.RouterService?
+        
+        func goToUsers() {
+            self.router?.dashboardNavigationStack.push(UsersScreen())
         }
     }
 }

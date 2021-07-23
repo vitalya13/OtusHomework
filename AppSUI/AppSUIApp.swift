@@ -6,13 +6,18 @@
 //
 
 import SwiftUI
+import AppCore
 
 @main
 struct AppSUIApp: App {
+    init() {
+        AppCore.ServiceLocator.shared.addService(service: AppCore.RouterService())
+        AppCore.ServiceLocator.shared.addService(service: AppCore.NetworkingService())
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(Router())
+            ContentView()                
         }
     }
 }

@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
+import AppCore
 import NavigationStack
 
 struct ContentView: View {    
-    @EnvironmentObject var router: Router
-    
+    @ObservedObject var viewModel = ViewModel()
+            
     var body: some View {
-        TabView(selection: $router.tabSelection) {
-            NavigationStackView(navigationStack: self.router.dashboardNavigationStack) {
+        TabView() {
+            NavigationStackView(navigationStack: self.viewModel.navigationStack) {
                 DashboardScreen()
             }            
             .tabItem {
@@ -40,7 +41,16 @@ struct ContentView: View {
                 }
                 .tag(3)
         }
+    }
+}
 
+extension ContentView {
+    class ViewModel: ObservableObject {
+        @AppCoreInjector var router: AppCore.RouterService?
+        
+        var navigationStack: NavigationStack {
+            get { self.router?.dashboardNavigationStack ?? NavigationStack() }
+        }
     }
 }
 

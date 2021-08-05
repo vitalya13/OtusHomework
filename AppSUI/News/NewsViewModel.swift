@@ -12,7 +12,7 @@ import AppCore
 final class NewsViewModel: ObservableObject {    
     @Published var news = [News]()
     @Published var city: City = .moscow
-    @AppCoreInjector var net: AppCore.NetworkingService?
+    @AppCoreInjector var net: AppCore.NetworkingService!
         
     init() {
         NewsViewModel.City.allCases.forEach { (city) in
@@ -23,7 +23,7 @@ final class NewsViewModel: ObservableObject {
     func load() {
         guard !self.news.isLoading(city: city) else { return }
                 
-        self.net?.loadNews(query: city.query, page: self.news.preIncrementingPage(city: city)) { [weak self] (list, error) in
+        self.net.loadNews(query: city.query, page: self.news.preIncrementingPage(city: city)) { [weak self] (list, error) in
             guard let self = self else { return }
             guard let articles = list?.articles else { return }
             self.news.append(articles: articles, city: self.city)

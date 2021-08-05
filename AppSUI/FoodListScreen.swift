@@ -28,18 +28,7 @@ struct FoodListScreen: View {
 
 extension FoodListScreen {
     class ViewModel: ObservableObject {
-        @AppCoreInjector var router: AppCore.RouterService?
-        
-        var foodListSelection: Binding<Int?> {
-            Binding(
-                get: {
-                    self.router?.foodListSelection
-                },
-                set: {
-                    self.router?.foodListSelection = $0                 
-                }
-            )
-        }
+        @AppCoreInjector var router: AppCore.RouterService!        
     }
 }
 

@@ -13,7 +13,7 @@ extension AppCore {
         public var tabSelection: Int = 0
         public var foodListSelection: Int?
         public let dashboardNavigationStack: NavigationStack = .init()
-            
+                    
         public init() {}
     }
 }

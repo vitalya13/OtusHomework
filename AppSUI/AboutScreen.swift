@@ -6,21 +6,33 @@
 //
 
 import SwiftUI
+import AppCore
 
 struct AboutScreen: View {
-    @State private var showingSheet = false
-    
+    @ObservedObject var viewModel = ViewModel()
+                
     var body: some View {
         NavigationView {
             VStack {
                 Button("Show modal screen") {
-                    self.showingSheet.toggle()
+                    self.viewModel.showModalScreenClick()
                 }
-                .sheet(isPresented: $showingSheet) {
+                .sheet(isPresented: self.$viewModel.showingSheet) {
                     LazyView(ModalScreen())
                 }
             }
             .navigationTitle("About")
+        }
+    }
+}
+
+extension  AboutScreen {
+    class ViewModel: ObservableObject {
+        @AppCoreInjector var router: AppCore.RouterService!
+        @Published var showingSheet = false
+        
+        func showModalScreenClick() {
+            self.showingSheet.toggle()
         }
     }
 }

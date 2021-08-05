@@ -14,11 +14,6 @@ struct LicensesScreen: View {
     var body: some View {
         VStack {
             Text("Welcome! I am Licenses")
-            Button {
-                self.viewModel.goToDashboard()
-            } label: {
-                Text("Go to Dashboard")
-            }
         }
         .navigationTitle("Licenses")
     }
@@ -26,12 +21,7 @@ struct LicensesScreen: View {
 
 extension LicensesScreen {
     class ViewModel: ObservableObject {
-        @AppCoreInjector var router: AppCore.RouterService?
-        
-        func goToDashboard() {
-            guard let router = router else { return }
-            router.tabSelection = 0
-        }
+        @AppCoreInjector var router: AppCore.RouterService!
     }
 }
 

@@ -14,7 +14,7 @@ struct ContentView: View {
             
     var body: some View {
         TabView() {
-            NavigationStackView(navigationStack: self.viewModel.navigationStack) {
+            NavigationStackView(navigationStack: self.viewModel.router.dashboardNavigationStack) {
                 DashboardScreen()
             }            
             .tabItem {
@@ -46,11 +46,7 @@ struct ContentView: View {
 
 extension ContentView {
     class ViewModel: ObservableObject {
-        @AppCoreInjector var router: AppCore.RouterService?
-        
-        var navigationStack: NavigationStack {
-            get { self.router?.dashboardNavigationStack ?? NavigationStack() }
-        }
+        @AppCoreInjector var router: AppCore.RouterService!
     }
 }
 

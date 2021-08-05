@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import AppCore
 
 struct ModalScreen: View {
     @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var viewModel = ViewModel()
     
     var body: some View {
         NavigationView {
@@ -20,10 +22,16 @@ struct ModalScreen: View {
             .navigationBarTitle("Modal", displayMode: .inline)
             .toolbar {
                 Button("Close") {
-                    presentationMode.wrappedValue.dismiss()
+                    self.presentationMode.wrappedValue.dismiss()
                 }
             }
         }
+    }
+}
+
+extension ModalScreen {
+    class ViewModel: ObservableObject {
+        @AppCoreInjector var router: AppCore.RouterService!
     }
 }
 

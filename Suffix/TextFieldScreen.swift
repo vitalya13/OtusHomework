@@ -17,8 +17,8 @@ struct TextFieldScreen: View {
                 TextField("Enter text", text: $txt)
                 NavigationLink(destination: SequenceScreen(text: self.txt), isActive: $isShowingList) {
                     Text("Show list")
-                }
-            }            
+                }                
+            }
         }
         .onOpenURL { url in
             if url.absoluteString == "widget://link1" {

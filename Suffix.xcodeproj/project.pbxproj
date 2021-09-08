@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE12A65826C961FB005C8040 /* SuffixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12A65726C961FB005C8040 /* SuffixSequence.swift */; };
+		CEB2800A26E91C2E0083D5EA /* JobSheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2800926E91C2E0083D5EA /* JobSheduler.swift */; };
 		CEE3C53126C90A8C00EA11AF /* SuffixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3C53026C90A8C00EA11AF /* SuffixApp.swift */; };
 		CEE3C53526C90A8C00EA11AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE3C53426C90A8C00EA11AF /* Assets.xcassets */; };
 		CEE3C53826C90A8C00EA11AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE3C53726C90A8C00EA11AF /* Preview Assets.xcassets */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		CE12A65726C961FB005C8040 /* SuffixSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixSequence.swift; sourceTree = "<group>"; };
+		CEB2800926E91C2E0083D5EA /* JobSheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSheduler.swift; sourceTree = "<group>"; };
 		CEE3C52D26C90A8C00EA11AF /* Suffix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Suffix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE3C53026C90A8C00EA11AF /* SuffixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixApp.swift; sourceTree = "<group>"; };
 		CEE3C53426C90A8C00EA11AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				CEE3C55C26C9312600EA11AF /* TextFieldScreen.swift */,
 				CEE3C56026C9370700EA11AF /* SequenceScreen.swift */,
 				CE12A65726C961FB005C8040 /* SuffixSequence.swift */,
+				CEB2800926E91C2E0083D5EA /* JobSheduler.swift */,
 			);
 			path = Suffix;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE12A65826C961FB005C8040 /* SuffixSequence.swift in Sources */,
+				CEB2800A26E91C2E0083D5EA /* JobSheduler.swift in Sources */,
 				CEE3C55D26C9312600EA11AF /* TextFieldScreen.swift in Sources */,
 				CEE3C56126C9370700EA11AF /* SequenceScreen.swift in Sources */,
 				CEE3C53126C90A8C00EA11AF /* SuffixApp.swift in Sources */,

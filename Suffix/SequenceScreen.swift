@@ -54,10 +54,13 @@ struct SequenceScreen: View {
 
 extension SequenceScreen {
     class ViewModel: ObservableObject {
-        @Published var suffixArray: SuffixSequence
+        var suffixArray: Array<String> = .init()
         
         init(text: String) {
-            self.suffixArray = .init(string: text)
+            text.split(separator: " ").forEach { (text) in
+                let suffixSequence: SuffixSequence = .init(string: String(text))
+                self.suffixArray.append(contentsOf: Array.init(suffixSequence))
+            }
         }
         
         var ascArray: [String] {
@@ -71,10 +74,12 @@ extension SequenceScreen {
         }
         
         var topArray: [String] {
-            self.ascArray
-                .prefix(10)
+            let arraySlice = self.ascArray
                 .filter({ $0.count == 3 })
-                .sorted { self.count(string: $0) < self.count(string: $1) }
+                .sorted { self.count(string: $0) > self.count(string: $1) }
+                .prefix(10)
+                
+            return Array(arraySlice)
         }
         
         func count(string: String) -> Int {

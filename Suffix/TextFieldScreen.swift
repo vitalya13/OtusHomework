@@ -19,14 +19,6 @@ struct TextFieldScreen: View {
                     Text("Show list")
                 }                
             }
-        }
-        .onOpenURL { url in
-            if url.absoluteString == "widget://link1" {
-                
-            }
-            else if url.absoluteString == "widget://link2" {
-                self.isShowingList = true
-            }
-        }
+        }        
     }
 }

@@ -73,17 +73,34 @@ struct SequenceScreen: View {
 
 extension SequenceScreen {
     class ViewModel: ObservableObject {
-        @Published var suffixArray: SuffixSequence
+        var suffixArray: Array<String> = .init()
         @Published var testValue: String
         
         init(text: String) {
-            self.suffixArray = .init(string: text)
             self.testValue = ""
+            text.split(separator: " ").forEach { (text) in
+                let suffixSequence: SuffixSequence = .init(string: String(text))
+                self.suffixArray.append(contentsOf: Array.init(suffixSequence))
+            }            
         }
         
         var ascArray: [String] {
             Set.init(self.suffixArray)
                 .sorted(by: { $0 < $1 })
+        }
+        
+        var descArray: [String] {
+            Set.init(self.suffixArray)
+                .sorted(by: { $0 > $1 })
+        }
+        
+        var topArray: [String] {
+            let arraySlice = self.ascArray
+                .filter({ $0.count == 3 })
+                .sorted { self.count(string: $0) > self.count(string: $1) }
+                .prefix(10)
+                
+            return Array(arraySlice)
         }
         
         func ascArrayTest() {
@@ -102,12 +119,7 @@ extension SequenceScreen {
             let jobScheduler = JobScheduler(queue: jobQueue, count: 1, qos: .default, completion: {})
             jobScheduler.run()
         }
-        
-        var descArray: [String] {
-            Set.init(self.suffixArray)
-                .sorted(by: { $0 > $1 })
-        }
-        
+              
         func descArrayTest() {
             var jobQueue = JobQueue()
             
@@ -124,14 +136,7 @@ extension SequenceScreen {
             let jobScheduler = JobScheduler(queue: jobQueue, count: 1, qos: .default, completion: {})
             jobScheduler.run()
         }
-        
-        var topArray: [String] {
-            self.ascArray
-                .prefix(10)
-                .filter({ $0.count == 3 })
-                .sorted { self.count(string: $0) < self.count(string: $1) }
-        }
-        
+               
         func topArrayTest() {
             var jobQueue = JobQueue()
             

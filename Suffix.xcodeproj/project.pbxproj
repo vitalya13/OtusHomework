@@ -12,26 +12,9 @@
 		CEE3C53126C90A8C00EA11AF /* SuffixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3C53026C90A8C00EA11AF /* SuffixApp.swift */; };
 		CEE3C53526C90A8C00EA11AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE3C53426C90A8C00EA11AF /* Assets.xcassets */; };
 		CEE3C53826C90A8C00EA11AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE3C53726C90A8C00EA11AF /* Preview Assets.xcassets */; };
-		CEE3C54726C90AC300EA11AF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE3C54626C90AC300EA11AF /* WidgetKit.framework */; };
-		CEE3C54926C90AC300EA11AF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE3C54826C90AC300EA11AF /* SwiftUI.framework */; };
-		CEE3C54C26C90AC300EA11AF /* SuffixWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3C54B26C90AC300EA11AF /* SuffixWidget.swift */; };
-		CEE3C54F26C90AC300EA11AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE3C54E26C90AC300EA11AF /* Assets.xcassets */; };
-		CEE3C55126C90AC300EA11AF /* SuffixWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CEE3C54D26C90AC300EA11AF /* SuffixWidget.intentdefinition */; };
-		CEE3C55226C90AC300EA11AF /* SuffixWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CEE3C54D26C90AC300EA11AF /* SuffixWidget.intentdefinition */; };
-		CEE3C55526C90AC300EA11AF /* SuffixWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEE3C54426C90AC300EA11AF /* SuffixWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CEE3C55D26C9312600EA11AF /* TextFieldScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3C55C26C9312600EA11AF /* TextFieldScreen.swift */; };
 		CEE3C56126C9370700EA11AF /* SequenceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3C56026C9370700EA11AF /* SequenceScreen.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CEE3C55326C90AC300EA11AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEE3C52526C90A8C00EA11AF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CEE3C54326C90AC300EA11AF;
-			remoteInfo = SuffixWidgetExtension;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CEE3C55926C90AC300EA11AF /* Embed App Extensions */ = {
@@ -40,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				CEE3C55526C90AC300EA11AF /* SuffixWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,13 +37,8 @@
 		CEE3C53426C90A8C00EA11AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE3C53726C90A8C00EA11AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEE3C53926C90A8C00EA11AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEE3C54426C90AC300EA11AF /* SuffixWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SuffixWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE3C54626C90AC300EA11AF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		CEE3C54826C90AC300EA11AF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		CEE3C54B26C90AC300EA11AF /* SuffixWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixWidget.swift; sourceTree = "<group>"; };
-		CEE3C54D26C90AC300EA11AF /* SuffixWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SuffixWidget.intentdefinition; sourceTree = "<group>"; };
-		CEE3C54E26C90AC300EA11AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEE3C55026C90AC300EA11AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEE3C55C26C9312600EA11AF /* TextFieldScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldScreen.swift; sourceTree = "<group>"; };
 		CEE3C56026C9370700EA11AF /* SequenceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,15 +51,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEE3C54126C90AC300EA11AF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEE3C54926C90AC300EA11AF /* SwiftUI.framework in Frameworks */,
-				CEE3C54726C90AC300EA11AF /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				CEE3C52F26C90A8C00EA11AF /* Suffix */,
-				CEE3C54A26C90AC300EA11AF /* SuffixWidget */,
 				CEE3C54526C90AC300EA11AF /* Frameworks */,
 				CEE3C52E26C90A8C00EA11AF /* Products */,
 			);
@@ -100,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				CEE3C52D26C90A8C00EA11AF /* Suffix.app */,
-				CEE3C54426C90AC300EA11AF /* SuffixWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,17 +103,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CEE3C54A26C90AC300EA11AF /* SuffixWidget */ = {
-			isa = PBXGroup;
-			children = (
-				CEE3C54B26C90AC300EA11AF /* SuffixWidget.swift */,
-				CEE3C54D26C90AC300EA11AF /* SuffixWidget.intentdefinition */,
-				CEE3C54E26C90AC300EA11AF /* Assets.xcassets */,
-				CEE3C55026C90AC300EA11AF /* Info.plist */,
-			);
-			path = SuffixWidget;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,29 +118,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				CEE3C55426C90AC300EA11AF /* PBXTargetDependency */,
 			);
 			name = Suffix;
 			productName = Suffix;
 			productReference = CEE3C52D26C90A8C00EA11AF /* Suffix.app */;
 			productType = "com.apple.product-type.application";
-		};
-		CEE3C54326C90AC300EA11AF /* SuffixWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEE3C55626C90AC300EA11AF /* Build configuration list for PBXNativeTarget "SuffixWidgetExtension" */;
-			buildPhases = (
-				CEE3C54026C90AC300EA11AF /* Sources */,
-				CEE3C54126C90AC300EA11AF /* Frameworks */,
-				CEE3C54226C90AC300EA11AF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SuffixWidgetExtension;
-			productName = SuffixWidgetExtension;
-			productReference = CEE3C54426C90AC300EA11AF /* SuffixWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,9 +134,6 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					CEE3C52C26C90A8C00EA11AF = {
-						CreatedOnToolsVersion = 12.4;
-					};
-					CEE3C54326C90AC300EA11AF = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -218,7 +152,6 @@
 			projectRoot = "";
 			targets = (
 				CEE3C52C26C90A8C00EA11AF /* Suffix */,
-				CEE3C54326C90AC300EA11AF /* SuffixWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -230,14 +163,6 @@
 			files = (
 				CEE3C53826C90A8C00EA11AF /* Preview Assets.xcassets in Resources */,
 				CEE3C53526C90A8C00EA11AF /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEE3C54226C90AC300EA11AF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEE3C54F26C90AC300EA11AF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,28 +178,10 @@
 				CEE3C55D26C9312600EA11AF /* TextFieldScreen.swift in Sources */,
 				CEE3C56126C9370700EA11AF /* SequenceScreen.swift in Sources */,
 				CEE3C53126C90A8C00EA11AF /* SuffixApp.swift in Sources */,
-				CEE3C55226C90AC300EA11AF /* SuffixWidget.intentdefinition in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEE3C54026C90AC300EA11AF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEE3C54C26C90AC300EA11AF /* SuffixWidget.swift in Sources */,
-				CEE3C55126C90AC300EA11AF /* SuffixWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CEE3C55426C90AC300EA11AF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CEE3C54326C90AC300EA11AF /* SuffixWidgetExtension */;
-			targetProxy = CEE3C55326C90AC300EA11AF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CEE3C53A26C90A8C00EA11AF /* Debug */ = {
@@ -396,7 +303,6 @@
 		CEE3C53D26C90A8C00EA11AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -418,7 +324,6 @@
 		CEE3C53E26C90A8C00EA11AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,46 +337,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.homework.Suffix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		CEE3C55726C90AC300EA11AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SuffixWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.homework.Suffix.SuffixWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CEE3C55826C90AC300EA11AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SuffixWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.homework.Suffix.SuffixWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,15 +359,6 @@
 			buildConfigurations = (
 				CEE3C53D26C90A8C00EA11AF /* Debug */,
 				CEE3C53E26C90A8C00EA11AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEE3C55626C90AC300EA11AF /* Build configuration list for PBXNativeTarget "SuffixWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEE3C55726C90AC300EA11AF /* Debug */,
-				CEE3C55826C90AC300EA11AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

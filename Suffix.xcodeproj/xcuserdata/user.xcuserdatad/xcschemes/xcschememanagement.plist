@@ -9,10 +9,18 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>SuffixWidgetExtension.xcscheme_^#shared#^_</key>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CEE3C52C26C90A8C00EA11AF</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEE3C54326C90AC300EA11AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

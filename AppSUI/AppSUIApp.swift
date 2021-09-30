@@ -13,6 +13,7 @@ struct AppSUIApp: App {
     init() {
         AppCore.ServiceLocator.shared.addService(service: AppCore.RouterService())
         AppCore.ServiceLocator.shared.addService(service: AppCore.NetworkingService())
+        AppCore.ServiceLocator.shared.addService(service: AppCore.CacheService())
     }
     
     var body: some Scene {

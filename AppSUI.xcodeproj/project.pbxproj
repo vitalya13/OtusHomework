@@ -15,12 +15,12 @@
 		CE051722269F043600938BDF /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE051721269F043600938BDF /* NewsViewModel.swift */; };
 		CE051725269F047C00938BDF /* NewsCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE051724269F047C00938BDF /* NewsCity.swift */; };
 		CE063D742688C0B60011EFA5 /* SuiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE063D732688C0B60011EFA5 /* SuiView.swift */; };
+		CE39FFF9270ABCF900018432 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = CE39FFF8270ABCF900018432 /* Networking */; };
+		CE39FFFC270ABD4F00018432 /* AnyCodable in Frameworks */ = {isa = PBXBuildFile; productRef = CE39FFFB270ABD4F00018432 /* AnyCodable */; };
 		CE540EE426A46EBA0025D87D /* UserScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE540EE326A46EBA0025D87D /* UserScreen.swift */; };
 		CE540EEC26A470930025D87D /* UsersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE540EEB26A470930025D87D /* UsersScreen.swift */; };
 		CE540EEF26A47AC50025D87D /* PhonesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE540EEE26A47AC50025D87D /* PhonesScreen.swift */; };
 		CE7779E126BAE23B0068CA65 /* AppCore in Frameworks */ = {isa = PBXBuildFile; productRef = CE7779E026BAE23B0068CA65 /* AppCore */; };
-		CE7779E526BAE2D60068CA65 /* AnyCodable in Frameworks */ = {isa = PBXBuildFile; productRef = CE7779E426BAE2D60068CA65 /* AnyCodable */; };
-		CE7779E826BAE2E00068CA65 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = CE7779E726BAE2E00068CA65 /* Networking */; };
 		CEB4B24726AAF22300E8F600 /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = CEB4B24626AAF22300E8F600 /* NavigationStack */; };
 		CED16B4B2680C2E5003182F7 /* PolicyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED16B4A2680C2E5003182F7 /* PolicyScreen.swift */; };
 		CED16B4F2680C4FC003182F7 /* ModalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED16B4E2680C4FC003182F7 /* ModalScreen.swift */; };
@@ -69,9 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7779E526BAE2D60068CA65 /* AnyCodable in Frameworks */,
+				CE39FFFC270ABD4F00018432 /* AnyCodable in Frameworks */,
 				CEB4B24726AAF22300E8F600 /* NavigationStack in Frameworks */,
-				CE7779E826BAE2E00068CA65 /* Networking in Frameworks */,
+				CE39FFF9270ABCF900018432 /* Networking in Frameworks */,
 				CE7779E126BAE23B0068CA65 /* AppCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,8 +226,8 @@
 			packageProductDependencies = (
 				CEB4B24626AAF22300E8F600 /* NavigationStack */,
 				CE7779E026BAE23B0068CA65 /* AppCore */,
-				CE7779E426BAE2D60068CA65 /* AnyCodable */,
-				CE7779E726BAE2E00068CA65 /* Networking */,
+				CE39FFF8270ABCF900018432 /* Networking */,
+				CE39FFFB270ABD4F00018432 /* AnyCodable */,
 			);
 			productName = AppSUI;
 			productReference = FA9D093B267A6CDD00BB8A4B /* AppSUI.app */;
@@ -515,18 +515,18 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CE7779E026BAE23B0068CA65 /* AppCore */ = {
+		CE39FFF8270ABCF900018432 /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = AppCore;
+			productName = Networking;
 		};
-		CE7779E426BAE2D60068CA65 /* AnyCodable */ = {
+		CE39FFFB270ABD4F00018432 /* AnyCodable */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CE53725C26AAEF70009F4F8E /* XCRemoteSwiftPackageReference "AnyCodable" */;
 			productName = AnyCodable;
 		};
-		CE7779E726BAE2E00068CA65 /* Networking */ = {
+		CE7779E026BAE23B0068CA65 /* AppCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Networking;
+			productName = AppCore;
 		};
 		CEB4B24626AAF22300E8F600 /* NavigationStack */ = {
 			isa = XCSwiftPackageProductDependency;

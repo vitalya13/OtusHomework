@@ -6,7 +6,10 @@
 //
 
 import Foundation
+
+#if canImport(NavigationStack)
 import NavigationStack
+#endif
 
 extension AppCore {
     public final class RouterService {

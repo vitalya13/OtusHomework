@@ -4,30 +4,28 @@
 import PackageDescription
 
 let package = Package(
-    name: "AppCore",
+    name: "Networking",
     platforms: [
-        .iOS(.v14),
+        .iOS(.v14), .macOS(.v11)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "AppCore",
-            targets: ["AppCore"]),
+            name: "Networking",
+            targets: ["Networking"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        //.package(url: "https://github.com/matteopuc/swiftui-navigation-stack.git", from: "1.0.0"),
-        //.package(url: "https://github.com/Flight-School/AnyCodable.git", from: "1.0.0"),
-        //.package(url: "../Networking", from: "1.0.0"),
+        // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "AppCore",
+            name: "Networking",
             dependencies: []),
         .testTarget(
-            name: "AppCoreTests",
-            dependencies: ["AppCore"]),
+            name: "NetworkingTests",
+            dependencies: ["Networking"]),
     ]
 )

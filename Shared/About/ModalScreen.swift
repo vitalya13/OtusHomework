@@ -19,12 +19,14 @@ struct ModalScreen: View {
                     Text("I am Modal")          
                 }
             }
-            .navigationBarTitle("Modal", displayMode: .inline)
+#if os(iOS)
+            /*.navigationBarTitle("Modal", displayMode: .inline)
             .toolbar {
                 Button("Close") {
                     self.presentationMode.wrappedValue.dismiss()
                 }
-            }
+            }*/
+#endif
         }
     }
 }

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if os(iOS)
 struct SuiView: UIViewRepresentable {
     var text: String
 
@@ -18,3 +19,7 @@ struct SuiView: UIViewRepresentable {
         uiView.text = text
     }
 }
+#else
+
+#endif
+    

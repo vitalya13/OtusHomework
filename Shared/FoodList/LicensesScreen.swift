@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AppCore
+ 
 
 struct LicensesScreen: View {
     @ObservedObject var viewModel = ViewModel()

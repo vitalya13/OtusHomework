@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import Networking
-import AppCore
+ 
+ 
 
 final class NewsViewModel: ObservableObject {    
     @Published var news = [News]()

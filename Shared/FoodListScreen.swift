@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AppCore
+ 
 
 struct FoodListScreen: View {
     @ObservedObject var viewModel = ViewModel()

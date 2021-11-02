@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AppCore
+ 
 
 struct AboutScreen: View {
     @ObservedObject var viewModel = ViewModel()

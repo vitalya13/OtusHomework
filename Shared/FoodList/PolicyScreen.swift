@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AppCore
+ 
 
 struct PolicyScreen: View {
     @ObservedObject var viewModel = ViewModel()

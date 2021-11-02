@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AppCore
+ 
 import NavigationStack
 
 struct ContentView: View {    

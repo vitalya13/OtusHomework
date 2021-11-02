@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Networking
+ 
 
 extension NewsViewModel {
     typealias News = (city: City, articles: [Article], page: Int, isLoaded: Bool)

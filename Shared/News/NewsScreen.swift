@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Networking
+ 
 
 struct NewsScreen: View {
     @ObservedObject var viewModel: NewsViewModel = .init()

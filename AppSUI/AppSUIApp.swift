@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import AppCore
 
 @main
 struct AppSUIApp: App {

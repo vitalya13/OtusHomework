@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import AppCore
 
 struct DashboardScreen: View {
     @ObservedObject var viewModel = ViewModel()

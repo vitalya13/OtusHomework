@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import AppCore
 
 struct ModalScreen: View {
     @Environment(\.presentationMode) var presentationMode
